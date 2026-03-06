@@ -1,0 +1,14 @@
+h1 {
+    color: red;
+    background-color: yellow;
+}
+
+#id01 {
+    color: blue;
+    background-color: pink;
+}
+
+.class01 {
+    color: green;
+    background-color: cyan;
+}
