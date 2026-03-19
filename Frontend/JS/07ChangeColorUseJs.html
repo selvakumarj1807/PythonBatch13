@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <style>
+        .myclass {
+            width: 200px;
+            background-color: rgb(241, 241, 142);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Select by ID</h1>
+
+    <input id="from" placeholder="enter the name"> <br><br>
+
+    <button onclick="check()">SUBMIT</button>
+
+    <p id="to"> Click the Button And Get Answer </p>
+
+    <script>
+        function check() {
+            box = document.getElementById("from").value;
+            document.getElementById("to").innerHTML = box;
+            to.style.color = "red";
+            to.className = "myclass";
+        }
+    </script>
+</body>
+
+</html>

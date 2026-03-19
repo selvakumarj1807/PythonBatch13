@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <center>
+        <h1>Add Two Numbers Using JS GetElementById!...</h1>
+    </center>
+
+    <hr>
+
+    <input type="text" placeholder="Enter Value 01" id="value01">
+
+    <input type="text" placeholder="Enter Value 02" id="value02">
+
+    <br><br>
+
+    <button onclick="addTwoNum()">Add Two Number!...</button>
+
+    <script>
+        function addTwoNum() {
+            v1 = document.getElementById("value01").value;
+            v2 = document.getElementById("value02").value;
+
+            answer = parseInt(v1) + parseInt(v2);
+
+            console.log(parseInt(v1) + parseInt(v2));
+            console.log(v1 + ' + ' + v2 + ' =' + answer);
+
+            alert(v1 + ' + ' + v2 + ' =' + answer);
+        }
+    </script>
+</body>
+
+</html>

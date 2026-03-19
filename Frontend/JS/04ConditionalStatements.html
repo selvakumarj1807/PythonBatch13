@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Conditional Statements</title>
+</head>
+
+<body>
+
+    <p>Enter the Number is Odd or even: <input id="first"></p>
+
+    <button onclick="oddEven()">Check</button>
+
+    <p id="answer">Click And Get Ansewer</p>
+
+    <script>
+        //NaN  - stands for "Not-a-Number. if (!isNaN(numOne))
+        function oddEven() {
+            numOne = parseInt(document.getElementById("first").value);
+
+            if (numOne % 2 == 0) {
+                document.getElementById("answer").innerHTML = "The given number is :" + numOne + " is even";
+            } else {
+                document.getElementById("answer").innerHTML = numOne + " is odd";
+            }
+        }
+    </script>
+</body>
+
+</html>
