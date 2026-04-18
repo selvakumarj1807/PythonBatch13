@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table,th,td{
+            border: 1px solid #222;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Python Django Template in index.html file</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum magni officia recusandae rem a dolore omnis adipisci eius repellendus nulla ea dolorum eligendi possimus, nobis obcaecati sapiente atque enim laudantium?</p>
+    
+    {{users}}  <!--variable declaration-->
+
+    {% comment %}
+
+    {{users}}
+
+    {% endcomment %}
+
+    <table>
+        <tr>
+            <th>S.No</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>18+</th>
+        </tr>
+        {% for user in users %}
+
+        <tr>
+            <td>{{forloop.counter}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.age}}</td>
+            <td>
+                {% if user.age >= 18 %}
+                Yes
+                {% else %}
+                No
+                {% endif %}
+            </td>
+        </tr>
+
+        {% endfor %}
+    </table>
+</body>
+</html>
